@@ -22,7 +22,8 @@ public class SalesforceApp extends MainClass {
 		System.out.println("TC01 passed");
 		endReport();
         closeBrowser();
-		//System.out.println("End");
+        
+		System.out.println("End");
 
 	}
 

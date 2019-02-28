@@ -53,6 +53,7 @@ public class MainClass {
 	public static void initializePath(String path){
 		report = new ExtentReports(path);
 		
+		
 	}
 	 
 	/*Launch the Browser.
@@ -69,6 +70,7 @@ public class MainClass {
 	public static void endReport() {
 		report.endTest(logger);
 		report.flush();
+		System.out.println("test Ended");
 		
 	}
 	public static void closeBrowser(){
