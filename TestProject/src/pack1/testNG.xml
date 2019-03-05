@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="crossbrowser"  parallel ="tests">
+	<test name="chromeTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="pack1.CrossBrowserTesting" />
+		</classes>
+	</test>
+			<test name="MicrosoftWebDriverTest">
+			<parameter name="browser" value="MicrosoftWebDriver" />
+		<classes>
+			<class name="pack1.CrossBrowserTesting" />
+		</classes>
+	</test>
+</suite>
+
+
+
+
