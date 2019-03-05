@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="C:/Users/gitam/Downloads/freemarker-2.3.23 _Class.jar"/>
 	<classpathentry kind="lib" path="C:/Users/gitam/Downloads/poi-3.7-20101029.jar"/>
 	<classpathentry kind="lib" path="C:/Users/gitam/Downloads/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
