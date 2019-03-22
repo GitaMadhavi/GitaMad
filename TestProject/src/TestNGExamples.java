@@ -45,7 +45,7 @@ public class TestNGExamples extends MainClass{
 			System.out.println("get Title Passed");
 
 		}
-		@Test(priority =3,enabled =false,dependsOnMethods={"googlePage"})
+		@Test(priority =3,dependsOnMethods={"googlePage"})
 		public void selFrmDropdown() throws InterruptedException{
 
 			WebElement selectMenu =driver.findElement(By.xpath("//select[@id ='searchDropdownBox']"));

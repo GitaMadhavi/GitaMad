@@ -21,13 +21,13 @@ public class MainClass {
 	public static void initializeDriver() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\gitam\\javaSeleniumWd\\Automation\\drivers\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		String path = "C:\\Users\\gitam\\Desktop\\ExtentReports\\report2.html";
 		report = new ExtentReports(path);
 		logger = report.startTest("ReportExt");
         logger.log(LogStatus.INFO, "Driver Initiated");
 	}
-	
-	
 	
 	
 	/*for FindElement ,method is created.
@@ -53,7 +53,7 @@ public class MainClass {
 	
 	}
 	
-	/*
+	/*Ending the Report
 	 * 
 	 */
 	public static void endReport() {
@@ -149,6 +149,11 @@ public class MainClass {
 		}
 
 	}
+	/*closing the browser
+	 * 
+	 * 
+	 */
+	
 	public static void closeBrowser(){
 		 report.endTest(logger);
 			report.flush();
