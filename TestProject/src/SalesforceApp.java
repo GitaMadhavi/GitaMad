@@ -3,6 +3,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -62,7 +63,35 @@ public class SalesforceApp extends MainClass {
 		enterText(By.xpath("//input[@id ='lastName']"), "lastname", "Munukutla Seshu");
 		click(By.xpath("//input[@value = 'Save All']"),"saveAll button");
 		click(By.xpath("//a/span[contains(text(),'Post')]")," Post Link");
+		
 	}
+	@Test(priority =6, dependsOnMethods={"clickUsrNavButton"})
+	public void leftPane() throws InterruptedException{
+		
+		 click(By.xpath("//a[@title ='My Settings']"),"My Settings");
+         Thread.sleep(5000);
+       //a[@title ='My Settings']
+         click(By.xpath("//span[@class ='accordionIcon expand_icon']"),"Icon");
+         Thread.sleep(4000);
+         click(By.xpath("//span[@id ='LoginHistory_font']"),"Login History");
+         click(By.xpath("//a[contains(text(),'Download login')]"),"download csv file");
+         click(By.xpath("//div[@id ='DisplayAndLayout']//span[@class='accordionIcon expand_icon']"),"display");
+         click(By.xpath("//span[@id ='CustomizeTabs_font']"),"customizeTabs");        
+      //  WebElement drpdownIcon=driver.findElement(By.xpath("//select[@id='p4']"));
+        
+        click(By.xpath("//span[@id='DisplayAndLayout_font']"),"Display and Layout");
+        click(By.xpath("//span[@id='CustomizeTabs_font']"),"click customize my tabs");
+      //span[@id='CustomizeTabs_font']
+      //select[@id='duel_select_0']
+        WebElement selectbutton=driver.findElement(By.xpath("//select[@id='duel_select_0']"));
+        Select sel2=new Select(selectbutton);
+    	sel2.selectByVisibleText("Reports");
+     sel2.selectByVisibleText("Salesforce Chatter");
+         Thread.sleep(4000);
+         WebElement add1=driver.findElement(By.xpath("//img[@title='Add']"));
+     	add1.click();
+	}
+	
 	@Test(enabled=true,dependsOnMethods={"profileSettings"})
 	public void logOutFrmApp() throws InterruptedException{
 		click(By.xpath("//a[@title = 'Logout']"),"logOut");
