@@ -9,21 +9,12 @@
 
   <name>cucumberSelenium</name>
   <url>http://maven.apache.org</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
          
   <dependencies>
- 
-   
-  <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
-</dependency>
-  
-    <dependency>
+   <dependency>
     <groupId>net.masterthought</groupId>
     <artifactId>cucumber-reporting</artifactId>
     <version>4.5.1</version>

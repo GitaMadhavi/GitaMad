@@ -95,9 +95,6 @@ public void testAfterClass(){
 }
 	
 
-
-
-
 /*
  * else if(browser.equalsIgnoreCase("Firefox"))
 		{
