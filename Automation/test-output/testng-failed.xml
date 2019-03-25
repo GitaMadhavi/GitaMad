@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [maventestNG]">
+  <test name="mvnTestNg(failed)">
+    <classes>
+      <class name="com.automation.Jan.Interactions">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="homePageForm"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.automation.Jan.Interactions -->
+    </classes>
+  </test> <!-- mvnTestNg(failed) -->
+</suite> <!-- Failed suite [maventestNG] -->

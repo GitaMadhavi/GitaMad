@@ -16,7 +16,7 @@ public class HomePage {
 	
 	static ExtentReports extent;
 	static ExtentTest homeTest;
-	
+   	
 
 	
 	public static void main(String[] args) throws InterruptedException {
@@ -24,8 +24,6 @@ public class HomePage {
 
 		 extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/HomeExtentReport.html", true);
 
-             
-		
 		System.setProperty("webdriver.chrome.driver","C:/Users/gitam/javaSeleniumWd/Jan19/drivers/chromedriver/chromedriver.exe");
 		WebDriver driver;
 		driver = new ChromeDriver();

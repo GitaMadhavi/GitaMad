@@ -13,7 +13,7 @@ public class ReportExtent {
 		// Initialize Extent Report
 		String path = "C:\\Users\\gitam\\Desktop\\ExtentReports\\report.html";
 
-		ExtentReports report = new ExtentReports(path);
+		ExtentReports report = new ExtentReports(path,false);
           
 		// Initialize logger
 		logger = report.startTest("Login to SFDC");

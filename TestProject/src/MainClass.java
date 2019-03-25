@@ -24,7 +24,7 @@ public class MainClass {
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		String path = "C:\\Users\\gitam\\Desktop\\ExtentReports\\report2.html";
-		report = new ExtentReports(path);
+		report = new ExtentReports(path,false);
 		logger = report.startTest("ReportExt");
         logger.log(LogStatus.INFO, "Driver Initiated");
 	}
@@ -149,7 +149,7 @@ public class MainClass {
 		}
 
 	}
-	/*closing the browser
+	/*close browser
 	 * 
 	 * 
 	 */
