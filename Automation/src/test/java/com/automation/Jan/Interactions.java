@@ -24,7 +24,7 @@ public class Interactions extends ReusableFunctions {
 		reports = new ExtentReports (path,true);
 		initializeDriver();	
 		//Logger = reports.startTest("Launched the driver");
-		extTest = reports.startTest("Launched the driver");
+		extTest = reports.startTest("Successfully Launched the driver");
 	}
 	@BeforeTest
 	public void beforeTest(){
@@ -97,7 +97,7 @@ public class Interactions extends ReusableFunctions {
 		extTest.log(LogStatus.PASS,"submit clicked successfully");
 		System.out.println("All fields Succesfully Filled");		
 		Thread.sleep(2000);
-		/**************************Home page Complete********************/
+		/**************************Home page Completed********************/
 		//Switch to Tab elements
 		WebElement switchTo= driver.findElement(By.xpath("//button[contains(text(),'Switch To') ]"));
 		clickObj(switchTo);
