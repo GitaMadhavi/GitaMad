@@ -17,7 +17,6 @@ public class ReusableFunctions {
 
 	public void initializeDriver(){
 		System.setProperty("webdriver.chrome.driver","C:/Users/gitam/javaSeleniumWd/Jan19/drivers/chromedriver/chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver","C:/Users/gitam/javaSeleniumWd/Jan19/drivers/chromedriver/chromedriver.exe");
 		System.out.println("Driver is Initialized by Chrome driver");
 		driver = new ChromeDriver();
 	}

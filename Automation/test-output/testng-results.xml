@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93538" started-at="2019-03-25T01:36:30Z" finished-at="2019-03-25T01:38:04Z">
+  <suite name="Default suite" duration-ms="95586" started-at="2019-03-26T22:53:37Z" finished-at="2019-03-26T22:55:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93538" started-at="2019-03-25T01:36:30Z" finished-at="2019-03-25T01:38:04Z">
+    <test name="Default test" duration-ms="95586" started-at="2019-03-26T22:53:37Z" finished-at="2019-03-26T22:55:13Z">
       <class name="com.automation.Jan.Interactions">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.automation.Jan.Interactions@3532ec19]" name="beforeSuite" is-config="true" duration-ms="4956" started-at="2019-03-24T18:36:25Z" finished-at="2019-03-24T18:36:30Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.automation.Jan.Interactions@28d25987]" name="beforeSuite" is-config="true" duration-ms="6033" started-at="2019-03-26T15:53:31Z" finished-at="2019-03-26T15:53:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.automation.Jan.Interactions@3532ec19]" name="beforeTest" is-config="true" duration-ms="3224" started-at="2019-03-24T18:36:30Z" finished-at="2019-03-24T18:36:34Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.automation.Jan.Interactions@28d25987]" name="beforeTest" is-config="true" duration-ms="4616" started-at="2019-03-26T15:53:37Z" finished-at="2019-03-26T15:53:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="homePageForm()[pri:0, instance:com.automation.Jan.Interactions@3532ec19]" name="homePageForm" duration-ms="90288" started-at="2019-03-24T18:36:34Z" finished-at="2019-03-24T18:38:04Z">
+        <test-method status="PASS" signature="homePageForm()[pri:0, instance:com.automation.Jan.Interactions@28d25987]" name="homePageForm" duration-ms="90941" started-at="2019-03-26T15:53:42Z" finished-at="2019-03-26T15:55:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageForm -->
